@@ -38,7 +38,8 @@ copy_file = (src, tgt) -> fs.writeFileSync [tgt, src.split('/').pop()].join('/')
 copy_directory_recursive = (src, target) ->
 	dir = fs.readdirSync src
 	_(dir).each (file) ->
-		(if is_dir file then copy_directory_recursive else copy_file) [src, file].join('/'), target
+		file = [src, file].join('/')
+		(if is_dir file then copy_directory_recursive else copy_file) file, target
 
 collect = ->
 	_(buckets).each (files, bucket) ->
