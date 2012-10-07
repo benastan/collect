@@ -28,7 +28,7 @@ Run:
 
 	npm install
 
-If you want the `collect-static` cake task in your Cakefile:
+If you want the `collect-static` cake task available from your project root, add this line to your Cakefile:
 
 	coffee.run fs.readFileSync('node_modules/collect/Cakefile').toString()
 
