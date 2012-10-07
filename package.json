@@ -1,0 +1,5 @@
+{
+	"name": "collect"
+	, "version": "0.0.1"
+	, "main": "dist/collect.js"
+}
