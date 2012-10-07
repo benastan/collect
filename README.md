@@ -7,7 +7,7 @@ A paradigm-agnostic static files collector especially for trigger.io projects le
 
 Collect makes it easy to manage libraries and dependencies in a trigger.io project. Use npm to load libraries, and use collect to put them in the right place.
 
-# Example: oad backbone, underscore and jquery
+# Example: Load backbone, underscore and jquery
 
 ## Setup
 
